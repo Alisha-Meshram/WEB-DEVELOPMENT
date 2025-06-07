@@ -6,7 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="calculator.js"></script>
+   
     <h1>heelo</h1>
+    <script>
+        let random = Math.random;
+let a = prompt("first number");
+let c = prompt("operation");
+let b = prompt("second number");
+
+let obj = {
+  "+": "-",
+  "*": "+",
+  "-": "/",
+  "/": "**",
+};
+
+if (random > 0.1) {
+alert(`the result is ${eval (`${a} ${c} ${b}`)}`);
+} else {
+c=obj[c]
+alert(`the result is ${eval (`${a} ${c} ${b}`)}`);
+}
+
+    </script>
 </body>
 </html>
