@@ -31,18 +31,32 @@ console.log("hello world")
 // }
 // ashu("all type of ");
 
-let a = "alisha";
+// let a = "alisha";
 
 
-console.log(a[0]);
-console.log(a[1]);
-console.log(a[2]);
-console.log(a[3]);
-console.log(a[4]);
-console.log(a[5]);
+// console.log(a[0]);
+// console.log(a[1]);
+// console.log(a[2]);
+// console.log(a[3]);
+// console.log(a[4]);
+// console.log(a[5]);
 
-let a_name="alisha";
-let friend="sanju";
+// let a_name="alisha";
+// let friend="sanju";
 
-console.log("my name is " + a_name + " my friend name is " + friend);
-console.log(`my name is ${a_name} and my friend name is ${friend}`);
+// console.log("my name is " + a_name + " my friend name is " + friend);
+// console.log(`my name is ${a_name} and my friend name is ${friend}`);
+
+let a=[1,2,3,4]
+let b=[5,6,7,8]
+let c=[5,6,7,8]
+
+a.concat(b,c)
+
+setTimeout(()=>{
+console.log("alisha");
+},3000);
+
+setTimeout(()=>{
+console.log("meshram");
+},4000)

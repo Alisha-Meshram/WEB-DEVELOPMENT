@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    
+  </head>
+  <style>
+    .container{
+border: 1px solid black;
+background-color: rgb(122, 19, 207);
+color: aliceblue;
+padding: 30px;
+margin: auto;
+width: 300px;
+display: block;
+font-size: bold;
+
+    }
+    .button{
+        padding: 10px;
+        background-color: aliceblue;
+        color: black;
+        border: none;
+        border-radius: 20px solid aliceblue;
+    }
+ </style>
+  <body>
+
+    <div class=" container ">
+        <form onsubmit="return data()" action="fom.html">
+            UserId: <input type="text" name="userid" id="n1" /><br /><br />
+            Contact: <input type="number" name="userid" id="n2" /><br /><br />
+            Password: <input type="password" name="userid" id="n3" /><br /><br />
+            Confirm Password:
+            <input type="password" name="userid" id="n4" /><br /><br />
+            <button type="submit" class="button">submit</button>
+          </form>
+      
+    </div>
+   
+
+    <script>
+      function data() {
+        var a = document.getElementById("n1").value;
+        var b = document.getElementById("n2").value;
+        var c = document.getElementById("n3").value;
+        var d = document.getElementById("n4").value;
+
+        if (a == "" || b == "" || c == "" || d == "") {
+          alert("All field are mondatory");
+          return false;
+        } else if (b.length < 10 || b.length > 10) {
+          alert("please enter 10 digit number");
+          return false;
+        } else if (isNaN(b)) {
+          alert("plase enter valid number");
+          return false;
+        } else if (c != d) {
+          alert("please enter same as password");
+          return false;
+        } else {
+          true;
+        }
+      }
+    </script>
+  </body>
+</html>
